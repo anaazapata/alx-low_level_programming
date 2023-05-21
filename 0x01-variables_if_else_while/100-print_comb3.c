@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	char num, num1;
+	int num, num1;
 
-	for (num = 48; num <= 56; num++)
+	for (num = '0'; num <= '8'; num++)
 	{
-		for (num1 = 49; num1 <= 57; num1++)
+		for (num1 = '1'; num1 <= '9'; num1++)
 		{
 			if (num <  num1)
 			{
 				putchar(num);
 				putchar(num1);
 
-				if (num != 56 && num1 != 57)
+				if (num != '8' && num1 != '9')
 				{
 					putchar(',');
 					putchar(' ');
