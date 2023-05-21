@@ -11,7 +11,7 @@ int main(void)
 	{
 		putchar(alpha);
 	}
-	
+
 	for (alpha = 65; alpha <= 90; alpha++)
 	{
 		putchar(alpha);
