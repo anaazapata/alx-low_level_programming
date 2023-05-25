@@ -1,5 +1,5 @@
 #ifndef _MAIN_H_
-#define _MAIN_H
+#define _MAIN_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,5 +15,8 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
+void print_number(int n);
+int _pow(int base, int exp);
+int count_digits(unsigned int number);
 
 #endif
