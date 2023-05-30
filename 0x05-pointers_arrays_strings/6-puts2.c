@@ -1,19 +1,23 @@
 #include "main.h"
 /**
- * void puts2 - prints every other character of a string
+ * puts2 - prints every other character of a string
  * starting with the first character
- * @s: pointer to string
+ * @str: pointer to string
  * Return: Always 0
  */
 void puts2(char *str)
 {
-	int len;
+	int len, even_char;
 
 	for (len = 0; str[len] != 0; len++)
 	{
-		if (str[len] % 2 == 0)
+	}
+
+	for (even_char = 0; even_char < len; even_char++)
+	{
+		if (even_char % 2 == 0)
 		{
-			_putchar(str[len]);
+			_putchar(str[even_char]);
 		}
 	}
 	_putchar(10);
