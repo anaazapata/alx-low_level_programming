@@ -29,14 +29,15 @@ char *str_concat(char *s1, char *s2)
 	{
 		str[i] = s1[i];
 	}
+
 	j = i;
 
 	for (i = 0; s2[i] != 0; i++)
 	{
 		str[i + j] = s2[i];
 	}
-	str[i + j] = s2[i];
 
+	str[i + j] = s2[i];
 	return (str);
 }
 
