@@ -30,14 +30,13 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == 0)
 		return (NULL);
 
-	j = i;
-
-	for (i = 0; s2[i] != 0; i++)
+	for (j = 0; s2[j] != 0; j++)
 	{
-		str[i + j] = s2[i];
+		str[i + j] = s2[j];
 	}
 
 	str[i + j] = 0;
+
 	return (str);
 }
 
