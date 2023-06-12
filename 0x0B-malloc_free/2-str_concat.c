@@ -20,22 +20,21 @@ char *str_concat(char *s1, char *s2)
 	if (str == 0)
 		return (NULL);
 	if (s1 == 0)
-		return (NULL);
+		s1 = "";
+
+	if (s2 == 0)
+		s2 = "";
 
 	for (i = 0; s1[i] != 0; i++)
 	{
 		str[i] = s1[i];
 	}
 
-	if (s2 == 0)
-		return (NULL);
-
 	for (j = 0; s2[j] != 0; j++)
 	{
 		str[i + j] = s2[j];
 	}
 
-	str[i + j] = 0;
 
 	return (str);
 }
