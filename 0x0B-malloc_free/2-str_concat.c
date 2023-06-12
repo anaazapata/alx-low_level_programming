@@ -1,6 +1,6 @@
 #include "main.h"
 
-char len_str(char *s);
+int len_str(char *s);
 /**
  * *str_concat - concatenates two strings
  * @s1: string one
@@ -46,7 +46,7 @@ char *str_concat(char *s1, char *s2)
  * Return: length of string
  */
 
-char len_str(char *s)
+int len_str(char *s)
 {
 	int len;
 
