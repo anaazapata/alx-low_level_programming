@@ -1,8 +1,9 @@
+#include "3-calc.h"
 /**
- * main - performs simple arithmetic operations
- * @argc: arguments' count
- * @argv: arguments' vector
- * Return: 0 (success), other integers (error)
+ * main - performs arithmetic operations
+ * @argc: arguments count
+ * @argv: arguments vector
+ * Return: 0
 */
 int main(int argc, char *argv[])
 {
