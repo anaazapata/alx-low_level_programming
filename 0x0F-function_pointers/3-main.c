@@ -1,12 +1,13 @@
-#include "3-calc.h"
 /**
- * main - contains the main function for op functions
- * Return: Always 0
- */
+ * main - performs simple arithmetic operations
+ * @argc: arguments' count
+ * @argv: arguments' vector
+ * Return: 0 (success), other integers (error)
+*/
 int main(int argc, char *argv[])
 {
-	int(*func)(int, int);
-	int res;
+	int (*func)(int, int);
+	int result;
 
 	if (argc != 4)
 	{
@@ -15,7 +16,6 @@ int main(int argc, char *argv[])
 	}
 
 	func = get_op_func(argv[2]);
-
 	if (func == NULL || argv[2][1] != 0)
 	{
 		printf("Error\n");
@@ -28,9 +28,8 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	res = func(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", res);
+	result = func(atoi(argv[1]), atoi(argv[3]));
+	printf("%i\n", result);
 
 	return (0);
-
 }
