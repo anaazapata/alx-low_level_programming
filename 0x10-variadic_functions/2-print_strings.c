@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * print_srings - print strings followed by a new line
+ * print_strings - print strings followed by a new line
  * @separator: char to pointer
  * @n: number of strings passed to the function
  * Return: always 0
