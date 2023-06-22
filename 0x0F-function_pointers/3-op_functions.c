@@ -32,7 +32,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_mod - returns the division of a and b
+ * op_div - returns the division of a and b
  * @a: number to be divided
  * @b: number to be divided
  * Return: division of a and b
